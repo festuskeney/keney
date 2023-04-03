@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Accommodation -THE HYNTONS HOTEL</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav style="background-image: url(images/accommodation\ image2.jfif);">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="bar.html">Bar</a></li>
+          <li><a href="restaurant.html">Restaurant</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.html" >About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Accommodation</h1>
+      <p>Our hotel offers a variety of comfortable and stylish accommodations, from cozy rooms to spacious suites. All of our rooms are equipped with modern amenities and designed to make your stay as comfortable as possible. Whether you're traveling for business or pleasure, we have the perfect room for you.</p>
+      <h2>Book Your Stay</h2>
+      <form action="booking.php" method="post">
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" name="checkin"  required>
+        <label for="checkout">Check-out Date:</label>
+        <input type="date" id="checkout" name="checkout" required>
+        <label for="roomtype">Room Type:</label>
+        <select id="roomtype" name="roomtype">
+          <option value="standard">standard </option>
+          <option value="deluxe">Deluxe Room</option>
+          <option value="suite">Suite</option>
+        </select>
+        <button type="submit">Book Now</button>
+      </form>
+    </main>
+  </body>
+</html>
