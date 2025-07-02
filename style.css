@@ -81,4 +81,30 @@ body {
   form button[type="submit"]:hover {
     background-color:aqua;
   }
+  .room-section {
+  margin-top: 30px;
+}
+.room-toggle {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1em;
+  background-color: #90ee90;
+  border: none;
+  cursor: pointer;
+}
+.room-detail {
+  display: none;
+  margin-bottom: 20px;
+}
+.slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+}
+.slider img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
   
