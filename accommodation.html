@@ -33,6 +33,44 @@
         </select>
         <button type="submit">Book Now</button>
       </form>
+<h2>Room Details</h2>
+
+<div class="room-section">
+  <button class="room-toggle" onclick="toggleRoom('standard')">Standard Room</button>
+  <div id="standard" class="room-detail">
+    <p>Comfortable and budget-friendly room with essential amenities like free Wi-Fi, TV, and a queen-sized bed.</p>
+    <div class="slider">
+      <img src="images/standard1.jpg" alt="Standard Room 1">
+      <img src="images/standard2.jpg" alt="Standard Room 2">
+    </div>
+  </div>
+
+  <button class="room-toggle" onclick="toggleRoom('deluxe')">Deluxe Room</button>
+  <div id="deluxe" class="room-detail">
+    <p>Spacious and elegant room with added features like a mini fridge, large windows, and a king-sized bed.</p>
+    <div class="slider">
+      <img src="images/deluxe1.jpg" alt="Deluxe Room 1">
+      <img src="images/deluxe2.jpg" alt="Deluxe Room 2">
+    </div>
+  </div>
+
+  <button class="room-toggle" onclick="toggleRoom('suite')">Suite</button>
+  <div id="suite" class="room-detail">
+    <p>Our most luxurious room offering a separate living area, balcony view, and premium service perks.</p>
+    <div class="slider">
+      <img src="images/suite1.jpg" alt="Suite Room 1">
+      <img src="images/suite2.jpg" alt="Suite Room 2">
+    </div>
+  </div>
+</div>
     </main>
+    <script>
+  function toggleRoom(id) {
+    const sections = document.querySelectorAll('.room-detail');
+    sections.forEach(section => {
+      section.style.display = (section.id === id && section.style.display !== 'block') ? 'block' : 'none';
+    });
+  }
+</script>
   </body>
 </html>
